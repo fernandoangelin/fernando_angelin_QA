@@ -1,0 +1,12 @@
+---
+url: https://uat.ormuco.com/
+
+users:
+- :email: angelin@ormuco
+  :name: Fernando
+  :last_name: Angelin
+  :password: Wr0n6
+- :email: adicionar_endereco_checkout@provedor.com
+  :name: Adiciona
+  :last_name: Endereço Checkout
+  :password: 9854fdsa
