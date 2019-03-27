@@ -6,7 +6,7 @@ This repository contains *TWO* methods to do UI Automated Tests in websites.
 
 The first was developed thinking about solving the problem itself using technologies that I am used to at everyday work. To solve the problem, I used Ruby with Cucumber, Capybara, SitePrism and Selenium.
 
-The second was developed thinking about the team without forget my strengths. As the team knows Python better than Ruby (I suppose), I realised that it would be better to solve this problem using Python and their technologies so, I used the Behave Framework. Behavior Driven Development (BDD) files are easy to maintain and understand.
+The second was developed thinking about the team without forget my strengths. As the team knows Python better than Ruby (I suppose), I realised that it would be better to solve this problem using Python and their technologies so, I used the Behave Framework. Behavior Driven Development (BDD) files are easy to maintain and understand. I used Selenium as well and Page Objects (similar to SitePrism).
 
 # How to run it?
 - ruby_method:
