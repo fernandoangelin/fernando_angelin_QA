@@ -5,7 +5,7 @@
 
 Feature: Website Login
   As a client
-  I want to login in the Website
+  I want to sign in the Website
   To visualize my informations
 
   @unsuccessful_login
