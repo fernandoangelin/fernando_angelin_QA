@@ -20,11 +20,18 @@ def before_all(context):
     context.config_0 = userdata.get('config_0', 'False')
     logger_type = userdata.get('logger', 'file_logger')
     context.logger = setup_logger(logger_type)
+
     web = context.config.userdata.get('web')
     if(web=='chrome'):
         context.browser = webdriver.Chrome()
     else:
         context.browser = webdriver.Firefox()
+    
+    env = context.config.userdata.get('env')
+    if(env=='env1'):
+        pass # open yaml 1 # I ran out of time :(
+    else:
+        pass # open yaml 2 # I ran out of time
 
 def before_feature(context, feature):
     pass
