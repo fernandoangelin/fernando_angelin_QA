@@ -20,8 +20,11 @@ def before_all(context):
     context.config_0 = userdata.get('config_0', 'False')
     logger_type = userdata.get('logger', 'file_logger')
     context.logger = setup_logger(logger_type)
-    context.browser = webdriver.Chrome()
-
+    web = context.config.userdata.get('web')
+    if(web=='chrome'):
+        context.browser = webdriver.Chrome()
+    else:
+        context.browser = webdriver.Firefox()
 
 def before_feature(context, feature):
     pass
