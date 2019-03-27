@@ -24,4 +24,4 @@ The second was developed thinking in the team but don't letting my strengths out
 
 # Why I pick BDD with Page Objects to solve the problem?
 
-I think the BDD files are complementary to the Documentation Development, like a Documentation with life. If the behavior is not reproduced, something is wrong. If some behavior will change in the development, the test must to change together. With the Page Objects pattern, the manutenibility gets easier when some elements of the page is changed during the development.
+I think the BDD files are complementary to the Documentation Development, like a Documentation with life. If the behavior is not reproduced, something is wrong. If some behavior changes in the development, the test must to change as well. With the Page Objects pattern, the manutenibility gets easier when some elements of the page is changed during the development.
