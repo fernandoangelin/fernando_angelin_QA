@@ -12,7 +12,7 @@ The second was developed thinking in the team but don't letting my strengths out
     - with Ruby installed and Chromedriver (Geckodriver as well)in the System PATH;
     - inside the root folder "ruby_method\", excecute 'bundle install';
     - then, 'cucumber -t@unsuccessful_login', to run in Chrome, by default;
-    - to run in Firefox, try ' cucumber -p firefox -p dev -t@unsuccessful_login'.
+    - to run in Firefox, try 'cucumber -p firefox -p dev -t@unsuccessful_login'.
     - the results will be shown in the terminal.
 
 - python method:
