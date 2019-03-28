@@ -1,4 +1,3 @@
 url: 'https://uat.ormuco.com'
-users:
-- email: fernando@ormuco.ca
-  password: pass123
+email: fernando@ormuco.ca
+password: pass123
