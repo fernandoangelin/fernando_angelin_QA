@@ -21,6 +21,9 @@ The second was developed thinking about the team without forget my strengths. As
     - inside the root folder "python_method\", excecute 'pip install -r requirements.txt';
     - then, 'behave python_method\features\specs\unsuccessful_login.feature', to run in Chrome, by default;
     - to run in Firefox, try 'behave -D web=firefox python_method\features\specs\unsuccessful_login.feature';
+    - by default, it runs with infos from env1.yaml;
+    - to set env2.yaml, add '-D env=env2' with the commands aboxe:
+        - 'behave -D web=firefox -D env=env2 python_method\features\specs\unsuccessful_login.feature'
     - the results will be shown in the terminal.
 
 # Why I pick BDD with Page Objects to solve the problem?
