@@ -8,5 +8,5 @@ Feature: Website Login
   @unsuccessful_login
   Scenario: Unsuccessful Login
     Given I am in the login page
-    When I set the user "angelin@ormuco.com" and password "Wr0n6" and click in the Sign In button
+    When I set the user and password and click in the Sign In button
     Then must to show a wrong user or password warning message

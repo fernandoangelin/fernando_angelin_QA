@@ -6,15 +6,16 @@ from python_method.features.pages.loginPage import LoginPage
 
 @given(u'I am in the login page')
 def access_login_page(context):
-    context.login_page = LoginPage(context.browser, root_uri='https://uat.ormuco.com')
+    link = context.data_env.get('url')
+    context.login_page = LoginPage(context.browser, root_uri=link)
     context.login_page.get('/login')
     sleep(5)
 
-@when(u'I set the user "{email}" and password "{password}" and click in the Sign In button')
-def set_login(context, email, password):
-    
-    context.login_page.input_username = email
-    context.login_page.input_password = password
+@when(u'I set the user and password and click in the Sign In button')
+def set_login(context):
+
+    context.login_page.input_username = context.data_env.get('email')
+    context.login_page.input_password = context.data_env.get('password')
 
     context.login_page.btn_sign_in.click()
     sleep(3)

@@ -7,6 +7,7 @@ from os.path import isdir
 from logging import getLogger, config
 from python_method.helpers import constants
 from selenium import webdriver
+import yaml
 
 active_tag_value_provider = {
     "config_0": False
@@ -29,9 +30,14 @@ def before_all(context):
     
     env = context.config.userdata.get('env')
     if(env=='env1'):
-        pass # open yaml 1 # I ran out of time :(
+        with open("python_method\helpers\env1.yaml", "r") as file_descriptor:
+            data = yaml.load(file_descriptor)
+        context.data_env = data
     else:
-        pass # open yaml 2 # I ran out of time
+        with open("python_method\helpers\env2.yaml", "r") as file_descriptor:
+            data = yaml.load(file_descriptor)
+        context.data_env = data
+
 
 def before_feature(context, feature):
     pass
